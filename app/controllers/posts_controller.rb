@@ -7,12 +7,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(blog_params)
+    @post = Post.new(post_params)
     if params[:back]
       render :new
     else
-      if @blog.save
-        redirect_to blogs_path, notice:"ブログが追加されました。"
+      if @post.save
+        redirect_to posts_path, notice:"ブログが追加されました。"
       else
         render :new
       end
