@@ -1,3 +1,4 @@
+<div class="container">
 <h1>投稿一覧</h1>
 <p><%= notice %></p>
 <table>
@@ -6,8 +7,8 @@
   </tr>
 <% @posts.sort_by{|post| post.created_at}.reverse.each do |post| %>
   <tr>
-    <td><%= post.content %></td>
     <td><%= post.created_at %></td>
+    <td><%= post.content %></td>
     <td><%= link_to "詳細", post_path(post.id) %></td>
     <td><%= link_to "編集", edit_post_path(post.id) %></td>
     <td><%= link_to "削除", post_path(post.id),
@@ -16,3 +17,4 @@
 <% end %>
 </table>
 <%= link_to "投稿を作成する", new_post_path %>
+</div>

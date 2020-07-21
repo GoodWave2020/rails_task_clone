@@ -6,12 +6,7 @@ body {
   height: 100%;
   font-family: serif;
 }
-.container {
-  width: 980px;
-  margin: 0 auto;
-  min-height: 100%;
-  position: relative;
-}
+
 header {
   background-color: blue;
   height: 50px;
@@ -22,11 +17,6 @@ header p {
   margin-top: 0;
   padding-top: 15px;
   padding-left: 1.5rem;
-}
-.article {
-  text-align: center;
-  font-size: 1.7rem;
-  font-weight: bold;
 }
 
 footer {
@@ -40,4 +30,14 @@ footer {
 }
 footer p {
   padding: 14px;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
 }
