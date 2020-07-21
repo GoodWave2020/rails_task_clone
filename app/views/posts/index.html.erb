@@ -1,21 +1,21 @@
 <div class="container">
-<h1>投稿一覧</h1>
-<p><%= notice %></p>
-<table class="contents_table">
-  <tr　class="contents_title">
-    <th>投稿時間</th>
-    <th>投稿内容</th>
-  </tr>
-<% @posts.sort_by{|post| post.created_at}.reverse.each do |post| %>
-  <tr class="contents">
-    <td><%= post.created_at %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to "詳細", post_path(post.id) %></td>
-    <td><%= link_to "編集", edit_post_path(post.id) %></td>
-    <td><%= link_to "削除", post_path(post.id),
-            method: :delete, data: { confirm: "本当に削除しますか" } %></td>
-  </tr>
-<% end %>
-</table>
-<%= link_to "投稿を作成する", new_post_path %>
+  <h1>投稿一覧</h1>
+  <p><%= notice %></p>
+  <table class="contents_table">
+    <tr　class="contents_title">
+      <th>投稿時間</th>
+      <th>投稿内容</th>
+    </tr>
+  <% @posts.sort_by{|post| post.created_at}.reverse.each do |post| %>
+    <tr class="contents">
+      <td><%= post.created_at %></td>
+      <td><%= post.content %></td>
+      <td><%= link_to "詳細", post_path(post.id) %></td>
+      <td><%= link_to "編集", edit_post_path(post.id) %></td>
+      <td><%= link_to "削除", post_path(post.id),
+              method: :delete, data: { confirm: "本当に削除しますか" } %></td>
+    </tr>
+  <% end %>
+  </table>
+  <%= link_to "投稿を作成する", new_post_path %>
 </div>
