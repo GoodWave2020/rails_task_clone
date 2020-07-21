@@ -5,6 +5,7 @@ html {
 body {
   height: 100%;
   font-family: serif;
+  background-image: url("/assets/back.png")
 }
 
 header {
