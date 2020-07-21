@@ -42,8 +42,16 @@ footer p {
   text-align: center;
 }
 
-table {
+.contents_table {
   margin: 0 auto;
+}
+
+th {
+  color: red;
+}
+
+.contents {
+  font-size: 1.5rem;
 }
 
 .post_content {
