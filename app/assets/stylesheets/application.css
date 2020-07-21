@@ -59,3 +59,7 @@ table {
   height: calc(10rem);
   line-height: 1rem;
 }
+
+.confirm {
+  font-size: 2rem;
+}
