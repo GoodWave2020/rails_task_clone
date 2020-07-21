@@ -20,6 +20,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def confirm
+    @post = post.new(post_params)
+    render :new if @post.invalid?
+  end
+
   def edit
   end
 
