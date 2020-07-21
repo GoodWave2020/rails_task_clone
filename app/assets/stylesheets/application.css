@@ -55,5 +55,7 @@ table {
 }
 
 .text_field {
-  margin: 10rem;
+  width: calc(20rem);
+  height: calc(10rem);
+  line-height: 1rem;
 }
