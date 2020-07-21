@@ -38,6 +38,22 @@ footer p {
   text-align: center;
 }
 
+.title {
+  text-align: center;
+}
+
 table {
   margin: 0 auto;
+}
+
+.post_content {
+  padding: 1rem;
+}
+
+.submit-btn {
+  margin-bottom: 1rem;
+}
+
+.text_field {
+  padding: 10rem;
 }
